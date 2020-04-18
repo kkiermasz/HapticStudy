@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2544D7EA244B04F50067216A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544D7E9244B04F50067216A /* AppDelegate.swift */; };
 		2544D7EC244B04F50067216A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544D7EB244B04F50067216A /* SceneDelegate.swift */; };
-		2544D7EE244B04F50067216A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544D7ED244B04F50067216A /* ViewController.swift */; };
-		2544D7F1244B04F50067216A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2544D7EF244B04F50067216A /* Main.storyboard */; };
 		2544D7F3244B04F60067216A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2544D7F2244B04F60067216A /* Assets.xcassets */; };
 		2544D7F6244B04F60067216A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2544D7F4244B04F60067216A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +17,6 @@
 		2544D7E6244B04F50067216A /* HapticStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2544D7E9244B04F50067216A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2544D7EB244B04F50067216A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2544D7ED244B04F50067216A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2544D7F0244B04F50067216A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2544D7F2244B04F60067216A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2544D7F5244B04F60067216A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2544D7F7244B04F60067216A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +33,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		251C1405244B0656005E30A2 /* SupporingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2544D7F7244B04F60067216A /* Info.plist */,
+			);
+			name = SupporingFiles;
+			sourceTree = "<group>";
+		};
+		251C1408244B06D8005E30A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2544D7F2244B04F60067216A /* Assets.xcassets */,
+				2544D7F4244B04F60067216A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		2544D7DD244B04F50067216A = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +71,8 @@
 			children = (
 				2544D7E9244B04F50067216A /* AppDelegate.swift */,
 				2544D7EB244B04F50067216A /* SceneDelegate.swift */,
-				2544D7ED244B04F50067216A /* ViewController.swift */,
-				2544D7EF244B04F50067216A /* Main.storyboard */,
-				2544D7F2244B04F60067216A /* Assets.xcassets */,
-				2544D7F4244B04F60067216A /* LaunchScreen.storyboard */,
-				2544D7F7244B04F60067216A /* Info.plist */,
+				251C1408244B06D8005E30A2 /* Resources */,
+				251C1405244B0656005E30A2 /* SupporingFiles */,
 			);
 			path = HapticStudy;
 			sourceTree = "<group>";
@@ -127,7 +137,6 @@
 			files = (
 				2544D7F6244B04F60067216A /* LaunchScreen.storyboard in Resources */,
 				2544D7F3244B04F60067216A /* Assets.xcassets in Resources */,
-				2544D7F1244B04F50067216A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +147,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2544D7EE244B04F50067216A /* ViewController.swift in Sources */,
 				2544D7EA244B04F50067216A /* AppDelegate.swift in Sources */,
 				2544D7EC244B04F50067216A /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2544D7EF244B04F50067216A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2544D7F0244B04F50067216A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2544D7F4244B04F60067216A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jaki.HapticStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jaki.HapticStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
