@@ -19,8 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         mainWindow = UIWindow(frame: UIScreen.main.bounds)
         
-        let viewController = UIViewController()
+        let viewController = UseCasesViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.navigationBar.prefersLargeTitles = true
         mainWindow?.rootViewController = navigationController
         
         mainWindow?.makeKeyAndVisible()

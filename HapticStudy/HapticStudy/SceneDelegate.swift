@@ -16,13 +16,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
          
-         mainWindow = UIWindow(windowScene: windowScene)
+        mainWindow = UIWindow(windowScene: windowScene)
                 
-         let viewController = UIViewController()
-         let navigationController = UINavigationController(rootViewController: viewController)
-         mainWindow?.rootViewController = navigationController
+        let viewController = UseCasesViewController()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.navigationBar.prefersLargeTitles = true
+        mainWindow?.rootViewController = navigationController
         
-         mainWindow?.makeKeyAndVisible()
+        mainWindow?.makeKeyAndVisible()
     }
 
 }

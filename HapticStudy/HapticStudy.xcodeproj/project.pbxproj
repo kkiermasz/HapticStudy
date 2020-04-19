@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		251C140C244B0C26005E30A2 /* UseCasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251C140B244B0C26005E30A2 /* UseCasesViewController.swift */; };
+		251C1417244C6664005E30A2 /* UseCasesViewController+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251C1416244C6664005E30A2 /* UseCasesViewController+Cell.swift */; };
+		251C141A244C6AC6005E30A2 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251C1419244C6AC6005E30A2 /* UseCase.swift */; };
+		251C141C244C6AE2005E30A2 /* UseCase+Kind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251C141B244C6AE2005E30A2 /* UseCase+Kind.swift */; };
 		2544D7EA244B04F50067216A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544D7E9244B04F50067216A /* AppDelegate.swift */; };
 		2544D7EC244B04F50067216A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544D7EB244B04F50067216A /* SceneDelegate.swift */; };
 		2544D7F3244B04F60067216A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2544D7F2244B04F60067216A /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		251C140B244B0C26005E30A2 /* UseCasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesViewController.swift; sourceTree = "<group>"; };
+		251C1416244C6664005E30A2 /* UseCasesViewController+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UseCasesViewController+Cell.swift"; sourceTree = "<group>"; };
+		251C1419244C6AC6005E30A2 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		251C141B244C6AE2005E30A2 /* UseCase+Kind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UseCase+Kind.swift"; sourceTree = "<group>"; };
 		2544D7E6244B04F50067216A /* HapticStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2544D7E9244B04F50067216A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2544D7EB244B04F50067216A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +58,41 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		251C1409244B0BC9005E30A2 /* UseCasesList */ = {
+			isa = PBXGroup;
+			children = (
+				251C1418244C6AB8005E30A2 /* Model */,
+				251C140A244B0C1E005E30A2 /* View */,
+			);
+			path = UseCasesList;
+			sourceTree = "<group>";
+		};
+		251C140A244B0C1E005E30A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				251C140B244B0C26005E30A2 /* UseCasesViewController.swift */,
+				251C1416244C6664005E30A2 /* UseCasesViewController+Cell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		251C140F244B0E5E005E30A2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				251C1409244B0BC9005E30A2 /* UseCasesList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		251C1418244C6AB8005E30A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				251C1419244C6AC6005E30A2 /* UseCase.swift */,
+				251C141B244C6AE2005E30A2 /* UseCase+Kind.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2544D7DD244B04F50067216A = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +112,7 @@
 		2544D7E8244B04F50067216A /* HapticStudy */ = {
 			isa = PBXGroup;
 			children = (
+				251C140F244B0E5E005E30A2 /* Scenes */,
 				2544D7E9244B04F50067216A /* AppDelegate.swift */,
 				2544D7EB244B04F50067216A /* SceneDelegate.swift */,
 				251C1408244B06D8005E30A2 /* Resources */,
@@ -147,8 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				251C1417244C6664005E30A2 /* UseCasesViewController+Cell.swift in Sources */,
+				251C140C244B0C26005E30A2 /* UseCasesViewController.swift in Sources */,
 				2544D7EA244B04F50067216A /* AppDelegate.swift in Sources */,
+				251C141A244C6AC6005E30A2 /* UseCase.swift in Sources */,
 				2544D7EC244B04F50067216A /* SceneDelegate.swift in Sources */,
+				251C141C244C6AE2005E30A2 /* UseCase+Kind.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
