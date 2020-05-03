@@ -27,6 +27,8 @@
 		25F86A86245ED0C90057901E /* UIImpactFeedbackGenerator+FeedbackStyle+CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F86A85245ED0C90057901E /* UIImpactFeedbackGenerator+FeedbackStyle+CaseIterable.swift */; };
 		25F86A88245ED14B0057901E /* UIImpactFeedbackGenerator+FeedbackStyle+Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F86A87245ED14B0057901E /* UIImpactFeedbackGenerator+FeedbackStyle+Title.swift */; };
 		25F86A8A245ED17C0057901E /* ButtonsViewController+ContentView+ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F86A89245ED17C0057901E /* ButtonsViewController+ContentView+ButtonView.swift */; };
+		25F86A90245F13460057901E /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F86A8F245F13460057901E /* Switch.swift */; };
+		25F86A92245F1A410057901E /* SwitchesViewController+ContentView+SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F86A91245F1A410057901E /* SwitchesViewController+ContentView+SwitchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		25F86A85245ED0C90057901E /* UIImpactFeedbackGenerator+FeedbackStyle+CaseIterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImpactFeedbackGenerator+FeedbackStyle+CaseIterable.swift"; sourceTree = "<group>"; };
 		25F86A87245ED14B0057901E /* UIImpactFeedbackGenerator+FeedbackStyle+Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImpactFeedbackGenerator+FeedbackStyle+Title.swift"; sourceTree = "<group>"; };
 		25F86A89245ED17C0057901E /* ButtonsViewController+ContentView+ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonsViewController+ContentView+ButtonView.swift"; sourceTree = "<group>"; };
+		25F86A8F245F13460057901E /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
+		25F86A91245F1A410057901E /* SwitchesViewController+ContentView+SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwitchesViewController+ContentView+SwitchView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,7 @@
 			children = (
 				25F86A72245DB5C10057901E /* SwitchesViewController.swift */,
 				25F86A74245DB5CD0057901E /* SwitchesViewController+ContentView.swift */,
+				25F86A91245F1A410057901E /* SwitchesViewController+ContentView+SwitchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 		25F86A76245DBC060057901E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				25F86A8E245F133C0057901E /* Switch */,
 				25F86A77245DBC090057901E /* TactileSlider */,
 			);
 			path = UI;
@@ -227,6 +233,14 @@
 				25F86A87245ED14B0057901E /* UIImpactFeedbackGenerator+FeedbackStyle+Title.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		25F86A8E245F133C0057901E /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				25F86A8F245F13460057901E /* Switch.swift */,
+			);
+			path = Switch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +321,7 @@
 				25F86A81245ED0960057901E /* ButtonsViewController.swift in Sources */,
 				25F86A88245ED14B0057901E /* UIImpactFeedbackGenerator+FeedbackStyle+Title.swift in Sources */,
 				25F86A7D245DD6180057901E /* SlidersViewController+ContentView+SliderView.swift in Sources */,
+				25F86A92245F1A410057901E /* SwitchesViewController+ContentView+SwitchView.swift in Sources */,
 				25F86A75245DB5CD0057901E /* SwitchesViewController+ContentView.swift in Sources */,
 				251C141A244C6AC6005E30A2 /* UseCase.swift in Sources */,
 				25F86A8A245ED17C0057901E /* ButtonsViewController+ContentView+ButtonView.swift in Sources */,
@@ -317,6 +332,7 @@
 				25F86A86245ED0C90057901E /* UIImpactFeedbackGenerator+FeedbackStyle+CaseIterable.swift in Sources */,
 				251C141C244C6AE2005E30A2 /* UseCase+Kind.swift in Sources */,
 				25F86A79245DBC2D0057901E /* TactileSlider.swift in Sources */,
+				25F86A90245F13460057901E /* Switch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

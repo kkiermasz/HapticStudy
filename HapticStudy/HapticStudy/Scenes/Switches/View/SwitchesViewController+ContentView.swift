@@ -22,10 +22,14 @@ extension SwitchesViewController {
             return scrollView
         }()
         
-        private let firstSwitch: UISwitch = {
-            let `switch` = UISwitch()
-            return `switch`
+        private let switchesStackView: UIStackView = {
+            let stackView = UIStackView()
+            stackView.spacing = 24
+            stackView.axis = .vertical
+            return stackView
         }()
+        
+        let switchViews = UIImpactFeedbackGenerator.FeedbackStyle.allCases.map(SwitchView.init(_:))
         
         // MARK: - Initialization
         
@@ -50,24 +54,28 @@ extension SwitchesViewController {
             scrollView.addSubview(containerView)
             containerView.translatesAutoresizingMaskIntoConstraints = false
             
-            [firstSwitch].forEach { view in
+            [switchesStackView].forEach { view in
                 containerView.addSubview(view)
                 view.translatesAutoresizingMaskIntoConstraints = false
             }
             
-            let constraints = [scrollView.topAnchor.constraint(equalTo: topAnchor),
-                               scrollView.leadingAnchor.constraint(equalTo: leadingAnchor),
-                               scrollView.trailingAnchor.constraint(equalTo: trailingAnchor),
-                               scrollView.bottomAnchor.constraint(equalTo: bottomAnchor),
-                               containerView.widthAnchor.constraint(equalTo: widthAnchor),
-                               containerView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-                               containerView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-                               containerView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-                               containerView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-                               firstSwitch.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 24),
-                               firstSwitch.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 24),
-                               firstSwitch.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -24),
-                               firstSwitch.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -24)]
+            switchViews.forEach(switchesStackView.addArrangedSubview(_:))
+            
+            let constraints = [
+                scrollView.topAnchor.constraint(equalTo: topAnchor),
+                scrollView.leadingAnchor.constraint(equalTo: leadingAnchor),
+                scrollView.trailingAnchor.constraint(equalTo: trailingAnchor),
+                scrollView.bottomAnchor.constraint(equalTo: bottomAnchor),
+                containerView.widthAnchor.constraint(equalTo: widthAnchor),
+                containerView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+                containerView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+                containerView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+                containerView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
+                switchesStackView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 24),
+                switchesStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 48),
+                switchesStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -48),
+                switchesStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -24),
+            ]
             NSLayoutConstraint.activate(constraints)
         }
         

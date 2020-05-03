@@ -2,7 +2,7 @@
 //  TactileSlider.swift
 //  Easy-to-grab slider control inspired by Control Center and HomeKit.
 //
-//  Created by Dale Price on 1/22/19 under MIT Licencse
+//  Created by Dale Price on 1/22/19 under MIT License.
 //  https://github.com/daprice/iOS-Tactile-Slider
 //
 
