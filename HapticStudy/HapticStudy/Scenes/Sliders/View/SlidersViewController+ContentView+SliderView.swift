@@ -61,18 +61,3 @@ extension SlidersViewController.ContentView {
     }
     
 }
-
-private extension UIImpactFeedbackGenerator.FeedbackStyle {
-    
-    var title: String {
-        switch self {
-        case .heavy: return "Heavy"
-        case .light: return "Light"
-        case .medium: return "Medium"
-        case .rigid: return "Rigid"
-        case .soft: return "Soft"
-        @unknown default: return "Not implemented"
-        }
-    }
-    
-}

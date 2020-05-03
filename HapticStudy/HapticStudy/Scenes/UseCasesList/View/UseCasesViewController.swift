@@ -12,9 +12,7 @@ final class UseCasesViewController: UITableViewController {
     
     // MARK: - Properties
     
-    let useCases: [UseCase] = [.init(kind: .buttons),
-                               .init(kind: .sliders),
-                               .init(kind: .switches)]
+    let useCases = UseCase.Kind.allCases
     
     // MARK: - Initialization
     

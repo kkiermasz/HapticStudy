@@ -10,7 +10,7 @@ import UIKit
 
 extension UseCasesViewController.UseCase {
     
-    enum Kind {
+    enum Kind: CaseIterable {
         
         // MARK: - Cases
         
@@ -22,7 +22,7 @@ extension UseCasesViewController.UseCase {
         
         var viewController: UIViewController {
             switch self {
-            case .buttons: return UIViewController()
+            case .buttons: return ButtonsViewController()
             case .sliders: return SlidersViewController()
             case .switches: return SwitchesViewController()
             }

@@ -1,14 +1,14 @@
 //
-//  SlidersViewController+ContentView.swift
+//  ButtonsViewController+ContentView.swift
 //  HapticStudy
 //
-//  Created by jaki on 02/05/2020.
+//  Created by jaki on 03/05/2020.
 //  Copyright © 2020 Jakub Kiermasz. All rights reserved.
 //
 
 import UIKit
 
-extension SlidersViewController {
+extension ButtonsViewController {
     
     final class ContentView: UIView {
         
@@ -19,17 +19,18 @@ extension SlidersViewController {
         private let scrollView: UIScrollView = {
             let scrollView = UIScrollView()
             scrollView.showsVerticalScrollIndicator = false
+            scrollView.delaysContentTouches = false
             return scrollView
         }()
         
-        private let slidersStackView: UIStackView = {
+        private let buttonsStackView: UIStackView = {
             let stackView = UIStackView()
             stackView.spacing = 24
             stackView.axis = .vertical
             return stackView
         }()
         
-        let sliderViews = UIImpactFeedbackGenerator.FeedbackStyle.allCases.map(SliderView.init(_:))
+        let buttonViews = UIImpactFeedbackGenerator.FeedbackStyle.allCases.map(ButtonView.init(_:))
         
         // MARK: - Initialization
         
@@ -54,12 +55,12 @@ extension SlidersViewController {
             scrollView.addSubview(containerView)
             containerView.translatesAutoresizingMaskIntoConstraints = false
             
-            [slidersStackView].forEach { view in
+            [buttonsStackView].forEach { view in
                 containerView.addSubview(view)
                 view.translatesAutoresizingMaskIntoConstraints = false
             }
             
-            sliderViews.forEach(slidersStackView.addArrangedSubview(_:))
+            buttonViews.forEach(buttonsStackView.addArrangedSubview(_:))
             
             let constraints = [
                 scrollView.topAnchor.constraint(equalTo: topAnchor),
@@ -71,10 +72,10 @@ extension SlidersViewController {
                 containerView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
                 containerView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
                 containerView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-                slidersStackView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 24),
-                slidersStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 48),
-                slidersStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -48),
-                slidersStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -24),
+                buttonsStackView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 24),
+                buttonsStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 48),
+                buttonsStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -48),
+                buttonsStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -24),
             ]
             NSLayoutConstraint.activate(constraints)
         }
