@@ -10,13 +10,14 @@ import UIKit
 
 extension UseCasesViewController.UseCase {
     
-    enum Kind: CaseIterable {
+    enum Kind: String, CaseIterable {
         
         // MARK: - Cases
         
         case buttons
         case sliders
         case switches
+        case errors
         
         // MARK: - Properties
         
@@ -25,16 +26,12 @@ extension UseCasesViewController.UseCase {
             case .buttons: return ButtonsViewController()
             case .sliders: return SlidersViewController()
             case .switches: return SwitchesViewController()
+            case .errors: return ErrorViewController()
             }
         }
         
-        var title: String {
-            switch self {
-            case .buttons: return "Buttons"
-            case .sliders: return "Sliders"
-            case .switches: return "Switches"
-            }
-        }
+        var title: String { rawValue.prefix(1).capitalized + rawValue.dropFirst() }
+        
     }
     
 }

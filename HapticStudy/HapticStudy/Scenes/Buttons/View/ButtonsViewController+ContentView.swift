@@ -30,7 +30,7 @@ extension ButtonsViewController {
             return stackView
         }()
         
-        let buttonViews = UIImpactFeedbackGenerator.FeedbackStyle.allCases.map(ButtonView.init(_:))
+        private let buttonViews = UIImpactFeedbackGenerator.FeedbackStyle.allCases.map(ButtonView.init(_:))
         
         // MARK: - Initialization
         

@@ -29,7 +29,7 @@ extension SlidersViewController {
             return stackView
         }()
         
-        let sliderViews = UIImpactFeedbackGenerator.FeedbackStyle.allCases.map(SliderView.init(_:))
+        private let sliderViews = UIImpactFeedbackGenerator.FeedbackStyle.allCases.map(SliderView.init(_:))
         
         // MARK: - Initialization
         
