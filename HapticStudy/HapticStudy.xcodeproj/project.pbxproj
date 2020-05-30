@@ -16,9 +16,13 @@
 		2544D7EC244B04F50067216A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2544D7EB244B04F50067216A /* SceneDelegate.swift */; };
 		2544D7F3244B04F60067216A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2544D7F2244B04F60067216A /* Assets.xcassets */; };
 		2544D7F6244B04F60067216A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2544D7F4244B04F60067216A /* LaunchScreen.storyboard */; };
+		2549C04A2477E3D400BD3C1A /* ListTypesViewController+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2549C0492477E3D400BD3C1A /* ListTypesViewController+Cell.swift */; };
+		2549C04C2477E46300BD3C1A /* ListViewController+Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2549C04B2477E46300BD3C1A /* ListViewController+Cell.swift */; };
 		25703B52245F2430008C63E8 /* ErrorViewController+ContentView+ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25703B51245F2430008C63E8 /* ErrorViewController+ContentView+ErrorView.swift */; };
 		25703B55245F25D3008C63E8 /* UINotificationFeedbackGenerator+FeedbackType+CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25703B54245F25D3008C63E8 /* UINotificationFeedbackGenerator+FeedbackType+CaseIterable.swift */; };
 		25703B57245F2624008C63E8 /* UINotificationFeedbackGenerator+FeedbackType+Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25703B56245F2624008C63E8 /* UINotificationFeedbackGenerator+FeedbackType+Title.swift */; };
+		258066052477E2C3008527F4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258066042477E2C3008527F4 /* ListViewController.swift */; };
+		2580660A2477E2F5008527F4 /* ListTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258066092477E2F5008527F4 /* ListTypesViewController.swift */; };
 		25F86A6E245DB0F90057901E /* SlidersViewController+ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F86A6D245DB0F90057901E /* SlidersViewController+ContentView.swift */; };
 		25F86A73245DB5C10057901E /* SwitchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F86A72245DB5C10057901E /* SwitchesViewController.swift */; };
 		25F86A75245DB5CD0057901E /* SwitchesViewController+ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F86A74245DB5CD0057901E /* SwitchesViewController+ContentView.swift */; };
@@ -48,9 +52,13 @@
 		2544D7F2244B04F60067216A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2544D7F5244B04F60067216A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2544D7F7244B04F60067216A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2549C0492477E3D400BD3C1A /* ListTypesViewController+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListTypesViewController+Cell.swift"; sourceTree = "<group>"; };
+		2549C04B2477E46300BD3C1A /* ListViewController+Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListViewController+Cell.swift"; sourceTree = "<group>"; };
 		25703B51245F2430008C63E8 /* ErrorViewController+ContentView+ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrorViewController+ContentView+ErrorView.swift"; sourceTree = "<group>"; };
 		25703B54245F25D3008C63E8 /* UINotificationFeedbackGenerator+FeedbackType+CaseIterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINotificationFeedbackGenerator+FeedbackType+CaseIterable.swift"; sourceTree = "<group>"; };
 		25703B56245F2624008C63E8 /* UINotificationFeedbackGenerator+FeedbackType+Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINotificationFeedbackGenerator+FeedbackType+Title.swift"; sourceTree = "<group>"; };
+		258066042477E2C3008527F4 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		258066092477E2F5008527F4 /* ListTypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTypesViewController.swift; sourceTree = "<group>"; };
 		25F86A6D245DB0F90057901E /* SlidersViewController+ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SlidersViewController+ContentView.swift"; sourceTree = "<group>"; };
 		25F86A72245DB5C10057901E /* SwitchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchesViewController.swift; sourceTree = "<group>"; };
 		25F86A74245DB5CD0057901E /* SwitchesViewController+ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwitchesViewController+ContentView.swift"; sourceTree = "<group>"; };
@@ -117,6 +125,7 @@
 		251C140F244B0E5E005E30A2 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				258066032477E2AC008527F4 /* List */,
 				25F86A93245F1F990057901E /* Error */,
 				25F86A7E245ED0800057901E /* Buttons */,
 				251C141D244C6F56005E30A2 /* Sliders */,
@@ -199,6 +208,33 @@
 				25F86A87245ED14B0057901E /* UIImpactFeedbackGenerator+FeedbackStyle+Title.swift */,
 			);
 			path = UIImpactFeedbackGenerator;
+			sourceTree = "<group>";
+		};
+		258066032477E2AC008527F4 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				258066072477E2DF008527F4 /* List */,
+				258066062477E2D1008527F4 /* ListTypesList */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		258066062477E2D1008527F4 /* ListTypesList */ = {
+			isa = PBXGroup;
+			children = (
+				258066092477E2F5008527F4 /* ListTypesViewController.swift */,
+				2549C0492477E3D400BD3C1A /* ListTypesViewController+Cell.swift */,
+			);
+			path = ListTypesList;
+			sourceTree = "<group>";
+		};
+		258066072477E2DF008527F4 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				258066042477E2C3008527F4 /* ListViewController.swift */,
+				2549C04B2477E46300BD3C1A /* ListViewController+Cell.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		25F86A6F245DB5A80057901E /* Switches */ = {
@@ -365,8 +401,10 @@
 				251C140C244B0C26005E30A2 /* UseCasesViewController.swift in Sources */,
 				2544D7EA244B04F50067216A /* AppDelegate.swift in Sources */,
 				25F86A7B245DBC9E0057901E /* TactileSliderLayerRenderer.swift in Sources */,
+				2580660A2477E2F5008527F4 /* ListTypesViewController.swift in Sources */,
 				25F86A81245ED0960057901E /* ButtonsViewController.swift in Sources */,
 				25703B52245F2430008C63E8 /* ErrorViewController+ContentView+ErrorView.swift in Sources */,
+				2549C04A2477E3D400BD3C1A /* ListTypesViewController+Cell.swift in Sources */,
 				25F86A88245ED14B0057901E /* UIImpactFeedbackGenerator+FeedbackStyle+Title.swift in Sources */,
 				25F86A95245F1FA40057901E /* ErrorViewController.swift in Sources */,
 				25F86A7D245DD6180057901E /* SlidersViewController+ContentView+SliderView.swift in Sources */,
@@ -375,6 +413,7 @@
 				251C141A244C6AC6005E30A2 /* UseCase.swift in Sources */,
 				25F86A8A245ED17C0057901E /* ButtonsViewController+ContentView+ButtonView.swift in Sources */,
 				25F86A6E245DB0F90057901E /* SlidersViewController+ContentView.swift in Sources */,
+				2549C04C2477E46300BD3C1A /* ListViewController+Cell.swift in Sources */,
 				25F86A97245F1FB40057901E /* ErrorViewController+ContentView.swift in Sources */,
 				2544D7EC244B04F50067216A /* SceneDelegate.swift in Sources */,
 				251C1420244C7045005E30A2 /* SlidersViewController.swift in Sources */,
@@ -384,6 +423,7 @@
 				251C141C244C6AE2005E30A2 /* UseCase+Kind.swift in Sources */,
 				25F86A79245DBC2D0057901E /* TactileSlider.swift in Sources */,
 				25703B57245F2624008C63E8 /* UINotificationFeedbackGenerator+FeedbackType+Title.swift in Sources */,
+				258066052477E2C3008527F4 /* ListViewController.swift in Sources */,
 				25F86A90245F13460057901E /* Switch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

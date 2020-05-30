@@ -1,18 +1,18 @@
 //
-//  UseCasesViewController.swift
+//  ListTypesViewController.swift
 //  HapticStudy
 //
-//  Created by jaki on 18/04/2020.
+//  Created by jaki on 22/05/2020.
 //  Copyright © 2020 Jakub Kiermasz. All rights reserved.
 //
 
 import UIKit
 
-final class UseCasesViewController: UITableViewController {
+final class ListTypesViewController: UITableViewController {
     
     // MARK: - Properties
     
-    private let useCases = UseCase.Kind.allCases
+    private let listTypes = UIImpactFeedbackGenerator.FeedbackStyle.allCases
     
     // MARK: - Initialization
     
@@ -28,26 +28,27 @@ final class UseCasesViewController: UITableViewController {
         super.viewDidLoad()
         
         navigationItem.largeTitleDisplayMode = .always
-        title = "Use cases"
+        title = "List types"
         
-        tableView.register(Cell.self, forCellReuseIdentifier: UseCasesViewControllerCellIdentifier)
+        tableView.register(Cell.self, forCellReuseIdentifier: ListTypesViewControllerCellIdentifier)
     }
     
     // MARK: - UITableView
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { useCases.count }
-    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { listTypes.count }
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: UseCasesViewControllerCellIdentifier, for: indexPath) as! Cell
-        let item = useCases[indexPath.item]
+        let cell = tableView.dequeueReusableCell(withIdentifier: ListTypesViewControllerCellIdentifier, for: indexPath) as! Cell
+        let item = listTypes[indexPath.item]
         cell.title = item.title
         return cell
     }
-    
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item = useCases[indexPath.item]
-        let viewController = item.viewController
+        let item = listTypes[indexPath.item]
+        let viewController = ListViewController(feedbackStyle: item)
         navigationController?.pushViewController(viewController, animated: true)
     }
     
 }
+

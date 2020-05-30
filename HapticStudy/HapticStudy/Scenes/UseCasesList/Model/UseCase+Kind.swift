@@ -18,6 +18,7 @@ extension UseCasesViewController.UseCase {
         case sliders
         case switches
         case errors
+        case list
         
         // MARK: - Properties
         
@@ -27,6 +28,7 @@ extension UseCasesViewController.UseCase {
             case .sliders: return SlidersViewController()
             case .switches: return SwitchesViewController()
             case .errors: return ErrorViewController()
+            case .list: return ListTypesViewController()
             }
         }
         
